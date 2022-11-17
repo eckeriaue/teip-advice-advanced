@@ -3,7 +3,9 @@
     "alpinejs": "^3.10.5"
   },
   "scripts": {
-    "start": "webpack"
+    "start": "webpack",
+    "tw-watch": "npx tailwindcss -i ./src/css/index.css -o ./app/style.css --watch",
+    "tw-min": "npx tailwindcss -i ./src/css/index.css -o ./app/style.css --minify"
   },
   "devDependencies": {
     "tailwindcss": "^3.2.4",
