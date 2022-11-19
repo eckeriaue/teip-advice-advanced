@@ -566,10 +566,6 @@ video {
   transition-duration: 150ms;
 }
 
-*{
-  box-sizing: border-box;
-}
-
 :root {
   --golden-ratio: 1.61803398875
 
