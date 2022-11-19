@@ -5,9 +5,9 @@ const colors = require('tailwindcss/colors')
 // }
 module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx, svg}",
-    "./docs/**/*.{vue,js,ts,jsx,tsx, svg}",
+    "./app/index.php",
+    "./src/**/*.{js}",
+    "./app/*.{php,js}",
   ],
   theme: {
     borderRadius: {
@@ -49,27 +49,6 @@ module.exports = {
       "6xl": "1152px",
       "7xl": "1280px",
     },
-    maxWidth: ({ theme, breakpoints }) => ({
-      none: "none",
-      0: "0px",
-      xs: "320px",
-      sm: "384px",
-      md: "448px",
-      lg: "512px",
-      xl: "576px",
-      "2xl": "672px",
-      "3xl": "768px",
-      "4xl": "896px",
-      "5xl": "1024px",
-      "6xl": "1152px",
-      "7xl": "1280px",
-      full: "100%",
-      min: "min-content",
-      max: "max-content",
-      fit: "fit-content",
-      prose: "65ch",
-      ...breakpoints(theme("screens")),
-    }),
     fontSize: {
       xs: '12px',
       sm: '14px',
